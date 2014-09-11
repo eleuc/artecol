@@ -2,6 +2,12 @@
 Thumbs.db
 ehthumbs.db
 
+
+
+#Carpeta vendor
+/vendor
+/app/config/local/database.php
+
 # Folder config file
 Desktop.ini
 
