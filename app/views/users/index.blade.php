@@ -2,13 +2,13 @@
 
 @section ('content')
 <h1>Usuarios</h1>
-<table>
+<table class="table-bordered">
   <tr>
     <th>Nombre</th>
     <th>Email</th>
     <th>Tipo</th>
   </tr>
-  @foreach ($users as $user) {
+  @foreach ($users as $user) 
     <tr>
       <td>{{$user->username}}</td>
       <td>{{$user->email}}</td>

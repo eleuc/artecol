@@ -29,6 +29,12 @@ background-color: ligthblue;
 
 }
 
+input#costo {
+border: none;
+padding: 3px;
+margin: 3px;
+color: white;
+}
 
 #contenido{
 margin-top: 50px;

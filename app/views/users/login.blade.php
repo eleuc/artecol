@@ -1,10 +1,26 @@
 @extends ('layout')
 
 @section ('content')
-<h1>Ingresar</h1>
+
 {{Form::open(['route' => 'users.attempt'])}}
-  <input name="user[email]" type="text"> Email <br>
-  <input name="user[password]" type="password"> Contraseña <br>
-  {{Form::submit('Aceptar')}}
+
+<table class="table-bordered" width="300" >
+  <tr>
+    <td colspan="2"><h1>Ingresar</h1></td>
+  </tr>
+  <tr>
+    <td align="right">Email</td>
+        <td><input name="user[email]" type="text"></td>
+
+  </tr>
+  <tr>
+    <td align="right">Contraseña</td>
+    <td><input name="user[password]" type="password"></td>
+  </tr>
+   <tr>
+    <td colspan="2">{{Form::submit('Aceptar')}}</td>
+  </tr>
+</table>
+  
 {{Form::close()}}
 @stop
